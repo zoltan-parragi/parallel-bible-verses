@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 100%;
+}
+
+.header {
+  padding: 5rem 0 7rem 0;
+  background-image: url("bible.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.headerContainer, .searchContainer, .referenceConatiner, .table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 4rem;
+  line-height: 7rem;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333333;
+  text-shadow: 1.5px 1px #999999;
+}
+
+.header h4 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #eaeaea;
+}
+
+.search {
+  padding: 5.1rem 0 6.1rem 0;
+  background: #E33030;
+  text-align: center;
+}
+
+.search h3 {
+  line-height: 2rem;
+}
+
+.search form {
+  margin-top: 1rem;
+}
+
+input, button {
+  font-size: 1rem;
+}
+
+.reference {
+  text-align: center;
+  padding-top: 7.4rem;
+  padding-bottom: 8rem;
+  font-size: 3rem;
+  background: #333;
+  color: #eaeaea;
+}
+
+
+.table {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.translationName {
+  background: #444444;
+  color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 3px 3px 3px 10px;
+  font-weight: bold;
+}
+
+.table-row {
+  position: relative;
+  margin: 0px 0 1.4rem 0;
+  padding: 1.4rem 1.4rem;
+  line-height: 1.6rem;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.text {
+  width: 90%;
+  float: left;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.buttonDel {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.8rem;
+}
+
+.buttonDel button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #666;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 0.7rem;
+}
+
+.footer {
+  padding: 5rem 0 4rem 0;
+  background: #111;
+  color: #eaeaea;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.api a {
+  color: #E33030;
+}
+
+.api a:hover {
+  color: #FC7171;
+}
+
+.madeBy a {
+  color: #eaeaea;
+}
+
+.madeBy a:hover {
+  color: #222222;
+}
+
+/* -- media queries --*/
+@media screen and (min-width: 760px) {
+  .header {
+    padding: 8rem 0 10rem 0;
+  }
+  .header h1 {
+    -webkit-text-stroke-width: 2px;
+    text-shadow: 2px 2px #999999;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header h1 {
+    font-size: 6rem;
+  }
+
+  .header h4 {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .searchWrapper {
+    width: 50%;
+    float: left;
+  }
+
+  .refWrapper {
+    width: 50%;
+    float: right;
+  }
+
+  .clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  .table {
+    width: 70%;
+  }
+
+  .table-row {
+    margin-bottom: 3rem;
+  }
+}
